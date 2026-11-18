@@ -5,7 +5,8 @@ Implementa os 26 requisitos funcionais e os 11 casos de uso dos Artefatos 01 e 0
 
 ## Estrutura
 
-```text
+```
+
 aag-selecoes/
 │
 ├── DOCS/          # Documentação do projeto (Artefatos, Planos de Teste, etc.)
@@ -18,7 +19,9 @@ aag-selecoes/
 ├── index.html     # Site do candidato (UC09 e UC10)
 └── README.md      # Documentação e instruções do projeto
 
-## Tecnologias
+```
+
+# Tecnologias
 HTML, CSS e JavaScript (sem frameworks) no front-end; PHP 8 + PDO no back-end; banco MySQL/MariaDB (XAMPP) ou SQLite.
 
 ## Como executar (XAMPP)
