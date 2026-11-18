@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SGCP · Módulo Administrativo – AAG Seleções</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- UC01 – tela de login -->
+  <main id="tela-login" class="tela-login oculto">
+    <section class="login-vitrine">
+      <a class="marca" href="index.html">
+        <span class="marca-selo">AAG</span>
+        <span><span class="marca-nome">AAG Seleções</span><br><span class="marca-sub">Organizadora de concursos</span></span>
+      </a>
+      <div>
+        <h1>Sistema de Gestão de Concursos Públicos</h1>
+        <p>Do edital ao resultado final: cadastro do concurso, candidatos, locais de prova, correção, recursos e relatório financeiro em um único lugar.</p>
+      </div>
+      <ol class="login-etapas">
+        <li><b>1</b> Departamento de Seleção – concurso, provas, candidatos e locais</li>
+        <li><b>2</b> Departamento de Resultados – ausências, gabaritos e recursos</li>
+        <li><b>3</b> Supervisor de Seleção – gabarito oficial, correção e financeiro</li>
+      </ol>
+    </section>
+    <section class="login-form">
+      <div class="login-caixa">
+        <h2>Módulo administrativo</h2>
+        <p class="suave">Acesso restrito aos usuários internos.</p>
+        <form id="form-login" novalidate>
+          <div class="campo">
+            <label for="login" class="obrig">Login</label>
+            <input type="text" id="login" name="login" autocomplete="username" autofocus>
+          </div>
+          <div class="campo">
+            <label for="senha" class="obrig">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="current-password">
+          </div>
+          <div id="login-erro" class="aviso aviso-erro oculto" role="alert"></div>
+          <button type="submit" class="btn btn-primario">Entrar</button>
+        </form>
+        <p class="login-rodape">É candidato? <a href="index.html">Acesse o site do candidato</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- aplicação -->
+  <div id="app" class="app oculto">
+    <aside class="lateral" id="lateral">
+      <a class="marca" href="#/inicio">
+        <span class="marca-selo">AAG</span>
+        <span><span class="marca-nome">AAG Seleções</span><br><span class="marca-sub">SGCP · Administrativo</span></span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Menu principal"></nav>
+      <div class="lateral-rodape">SGCP v1.0 · Grupo G-02<br>Teste e Qualidade de Software – CEUB</div>
+    </aside>
+
+    <div class="principal">
+      <header class="barra">
+        <button class="btn btn-secundario btn-menu" id="btn-menu" type="button" aria-label="Abrir menu">☰</button>
+        <div class="campo">
+          <label for="concurso-atual">Concurso</label>
+          <select id="concurso-atual"></select>
+        </div>
+        <span class="barra-espaco"></span>
+        <a class="chip-data" id="chip-data" href="#/homologacao" title="Data considerada pelo sistema"></a>
+        <div class="usuario"><b id="usuario-nome"></b><span id="usuario-perfil"></span></div>
+        <button class="btn btn-secundario" id="btn-sair" type="button">Sair</button>
+      </header>
+      <main class="conteudo" id="conteudo" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
