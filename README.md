@@ -3,21 +3,20 @@
 Projeto da disciplina Teste e Qualidade de Software (CEUB) – Grupo G-02.
 Implementa os 26 requisitos funcionais e os 11 casos de uso dos Artefatos 01 e 02.
 
-"""
+## Estrutura
 
+```text
 aag-selecoes/
 │
-├── DOCS/                    # Documentação do projeto (Artefatos, Planos de Teste, etc.)[cite: 1]
-├── api/                     # Arquivos e rotas da API em PHP[cite: 1]
-├── assets/                  # Arquivos estáticos (imagens, estilos, scripts)[cite: 1]
-├── database/                # Scripts de banco de dados (schema.sql, etc.)[cite: 1]
-├── tests/                   # Arquivos e scripts de testes de software[cite: 1]
+├── DOCS/          # Documentação do projeto (Artefatos, Planos de Teste, etc.)
+├── api/           # API em PHP (index.php é o roteador; handlers/ por caso de uso; lib/ regras e banco)
+├── assets/        # CSS e JavaScript
+├── database/      # Esquema SQL e arquivos de retorno dos bancos conveniados
+├── tests/         # Testes de software (executar_casos_de_teste.py)
 │
-├── admin.html               # Módulo administrativo[cite: 1]
-├── index.html               # Página principal / site do candidato[cite: 1]
-└── README.md                # Documentação e instruções do projeto[cite: 1]
-
-"""
+├── admin.html     # Módulo administrativo (UC01 a UC08 e UC11)
+├── index.html     # Site do candidato (UC09 e UC10)
+└── README.md      # Documentação e instruções do projeto
 
 ## Tecnologias
 HTML, CSS e JavaScript (sem frameworks) no front-end; PHP 8 + PDO no back-end; banco MySQL/MariaDB (XAMPP) ou SQLite.
